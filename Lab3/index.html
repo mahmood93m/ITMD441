@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMD-441 Lab 3 Mahmood Mehrjoo<</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body id="main">
+    <section id="title">
+      <h3 id="myName">ITMD 441 - Lab 3 - Mahmood Mehrjoo</h3>
+    </section>
+    <div id="main-container">
+      <h1 id="heading">Tip Calculator</h1>
+      <form id="form-container">
+        <fieldset>
+          <div class="form-field">
+            <label class="sub-heading">Bill Total:</label>
+            <input type="number" class="textBox" id="bill_total_field" name="bill_total_field" oninput="updateBill(this.value);" >
+          </div>
+          <div class="form-field">
+            <label class="sub-heading">Tip:</label>
+            <input type="range" class="rangefield" id="bill_percent_field" name="bill_percent_field" min="0" max="100" oninput="updateTipInput(this.value);">
+          </div>
+          <div class="form-field">
+            <label class="sub-heading">Tip Percentage:</label>
+            <input type="text" class="textBox2" id="tip_percent_field" name="tip_percent_field" disabled>
+          </div>
+          <div class="form-field">
+            <label class="sub-heading">Tip Amount: </label>
+            <input type="text" class="textBox2" id="tip_amount_field" name="tip_amount_field" disabled>
+          </div>
+          <div class="form-field">
+            <label class="sub-heading">Total Bill with Tip:</label>
+            <input type="text" class="textBox2" id="total_bill_field" name="total_bill_field" disabled>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
