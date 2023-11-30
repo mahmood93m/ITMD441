@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #030202 50%, #788506 94%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .container {
+    height: 40px;
+    width: 250px;
+    background-color: #04AA6D; /* Green */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   /* Style inputs */
+   input[type=text], select {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #fefefe;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: aliceblue;
+    display:inline-block;
+    clear: both;
+  
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  legend{
+    border: 2px solid #97b993;
+  font-style: normal;
+  margin: 0 auto;
+  line-height: 200%;
+  }
+  
+  fieldset{
+  border: 5px solid #f1eded;
+  font-style: normal;
+  margin: 0 auto;
+  line-height: 200%;
+  }
+  
+  
