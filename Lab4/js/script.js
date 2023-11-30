@@ -80,7 +80,7 @@ fetch(tod)
     dawntxttoday.value = ("Dawn: " + datatoday.results.dawn);
 	dusktxttoday.value = ("Dusk: " + datatoday.results.dusk);
 	lengthtxttoday.value = ("Day Length: " + datatoday.results.day_length);
-	goldentxttoday.value = ("Golden Hour: " + datatoday.results.golden_hour);
+	solartxttoday.value = ("Solar Noon: " + datatoday.results.solar_noon);
 	zonetxttoday.value = ("Zone: " + datatoday.results.timezone);
 	txttodaydown.value = ("█████████████▓▒▒░░░ Tomorrow ░░░▒▒▓███████████");
 	
@@ -95,7 +95,7 @@ fetch(tow)
     dawntxttommarow.value = ("Dawn: " + datatommarow.results.dawn);
 	dusktxttommarow.value = ("Dusk: " + datatommarow.results.dusk);
 	lengthtxttommarow.value = ("Day Length: " + datatommarow.results.day_length);
-	goldentxttommarow.value = ("Golden Hour: " + datatommarow.results.golden_hour);
+	solartxttommarow.value = ("Solar Noon: " + datatommarow.results.solar_noon);
 	zonetxttommarow.value = ("Zone: " + datatommarow.results.timezone);
   })
   .catch((error) => console.error("Error:", error));
@@ -127,7 +127,7 @@ function makeBoxes() {
 	dawntxttoday  = document.createElement("input");
 	dusktxttoday  = document.createElement("input");
 	lengthtxttoday  = document.createElement("input");
-	goldentxttoday = document.createElement("input");
+	solartxttoday = document.createElement("input");
 	zonetxttoday  = document.createElement("input");
 	txttodaydown = document.createElement("input");
 	///////////////////////////////////////////////////
@@ -136,7 +136,7 @@ function makeBoxes() {
 	dawntxttommarow = document.createElement("input");
 	dusktxttommarow = document.createElement("input");
 	lengthtxttommarow = document.createElement("input");
-	goldentxttommarow = document.createElement("input");
+	solartxttommarow = document.createElement("input");
 	zonetxttommarow = document.createElement("input");
 	//////////////////////////////////////////////////
 	txttodayup.type = "text";
@@ -169,10 +169,10 @@ function makeBoxes() {
 	lengthtxttoday.setAttribute("id", "length");
 	document.body.appendChild(lengthtxttoday);
 	//////////////////////////////////////////////////
-	goldentxttoday.type = "text";
-	goldentxttoday.disabled = true;
-	goldentxttoday.setAttribute("id", "length");
-	document.body.appendChild(goldentxttoday);
+	solartxttoday.type = "text";
+	solartxttoday.disabled = true;
+	solartxttoday.setAttribute("id", "length");
+	document.body.appendChild(solartxttoday);
 	//////////////////////////////////////////////////
 	zonetxttoday.type = "text";
 	zonetxttoday.disabled = true;
@@ -209,10 +209,10 @@ function makeBoxes() {
 	lengthtxttommarow.setAttribute("id", "length");
 	document.body.appendChild(lengthtxttommarow);
 	//////////////////////////////////////////////////
-	goldentxttommarow.type = "text";
-	goldentxttommarow.disabled = true;
-	goldentxttommarow.setAttribute("id", "length");
-	document.body.appendChild(goldentxttommarow);
+	solartxttommarow.type = "text";
+	solartxttommarow.disabled = true;
+	solartxttommarow.setAttribute("id", "length");
+	document.body.appendChild(solartxttommarow);
 	//////////////////////////////////////////////////
 	zonetxttommarow.type = "text";
 	zonetxttommarow.disabled = true;
