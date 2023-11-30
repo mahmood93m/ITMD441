@@ -74,7 +74,7 @@ else if(document.getElementById('TX').checked){
 fetch(tod)
   .then((response) => response.json())
   .then((datatoday) => {  
-	txttodayup.value = ("███████████████▓▒▒░░░ Today ░░░▒▒▓███████████████████");
+	txttodayup.value = ("█████████████▓▒▒░░░ Today ░░░▒▒▓█████████████");
     risetxttoday.value = ("Sunrise: " + datatoday.results.sunrise);
     settxttoday.value = ("Sunset: " + datatoday.results.sunset);
     dawntxttoday.value = ("Dawn: " + datatoday.results.dawn);
@@ -82,7 +82,7 @@ fetch(tod)
 	lengthtxttoday.value = ("Day Length: " + datatoday.results.day_length);
 	goldentxttoday.value = ("Golden Hour: " + datatoday.results.golden_hour);
 	zonetxttoday.value = ("Zone: " + datatoday.results.timezone);
-	txttodaydown.value = ("█████████████▓▒▒░░░ Tomorrow ░░░▒▒▓███████████████");
+	txttodaydown.value = ("█████████████▓▒▒░░░ Tomorrow ░░░▒▒▓███████████");
 	
   })
   .catch((error) => console.error("Error:", error));
